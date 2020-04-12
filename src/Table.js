@@ -6,12 +6,13 @@ const TableHeader = () => {
       <tr>
         <th>Name</th>
         <th>Job</th>
+        <th>Remove</th>
       </tr>
     </thead>
   );
 };
 
-const TableBody = props => {
+const TableBody = (props) => {
   const rows = props.characterData.map((row, index) => {
     return (
       <tr key={index}>
@@ -26,7 +27,7 @@ const TableBody = props => {
   return <tbody>{rows}</tbody>;
 };
 
-const Table = props => {
+const Table = (props) => {
   const { characterData, removeCharacter } = props; //This is ES6 shorthand
 
   return (
