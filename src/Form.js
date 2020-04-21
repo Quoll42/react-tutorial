@@ -11,7 +11,7 @@ class Form extends Component {
     const { name, value } = event.target;
 
     this.setState({
-      [name]: value, //AG notes: ES6 allows using square brackets for "computed property names"
+      [name]: value, //AG notes: ES6 allows using square brackets for computed property names
     });
   };
 
